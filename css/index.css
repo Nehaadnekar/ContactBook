@@ -15,32 +15,42 @@ header{
     max-width: 1200px;
     
 }
-.title{
+/* .title{
     position: absolute;
     top:50%;
-    left:50%;
+    left:75%;
     transform:translate(-50%,-50%);
-}
-.title h1{
-    left:70%;
+} */
+h1{
+    /* left:70%; */
     color:black;
     font-size: 70px;
+    position: absolute;
+    top:35%;
+    left:67%;
+    transform:translate(-50%,-50%);
 }
-.title h2{
+h2{
     color:black;
     font-size: 30px;
+    position: absolute;
+    top:50%;
+    left:67%;
+    transform:translate(-50%,-50%);
+    
 }
 
 .button{
     position:absolute;
+    margin-right: 25px;
     top:72%;
-    left:50%;
-    font-size: 15px;
+    left:75%;
+    font-size: 18px;
     transform:translate(-50%,-50%);
 }
 .btn{
     border:1px solid black;
-    padding: 10px 30px;
+    padding: 10px 40px;
     color: black;
     transition: 0.6s ease;
 }
