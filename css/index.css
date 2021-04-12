@@ -72,6 +72,10 @@ header{
     padding-right: 8%;
     box-sizing: border-box;
     overflow: hidden;
+    background-image: url(../images/register.jpg);
+    background-size: cover;
+    background-position: center;
+
 }
 .navbar{
     width: 100%;
@@ -84,26 +88,31 @@ header{
     margin:30px 0;
 }
 .menu-icon{
-    width:25px;
+    width:40px;
     cursor: pointer;
 }
-.nav{
+nav{
     flex:1;
     text-align: right;
 }
-.nav ul li{
+nav ul li{
     list-style: none;
-    display: inline;
+    display:inline-block;
     margin-right: 30px;
 }
-.nav ul li a{
+nav ul li a{
     text-decoration: none;
     color:#000000;
     font-size: 14px;
+    padding:5px 10px;
+    border:1px solid transparent;
+    transition: 0.6s ease;
 }
-.nav ul li a:hover{
+nav ul li a:hover{
 
-    color:#036e1a;
+
+    background-color: #0563df;
+    color:#FFFFFF;
  
 }
 .row{
@@ -123,11 +132,10 @@ header{
     font-size: 54px;
 }
 .col1 h3{
-    font-size: 
-    30px;
+    font-size: 30px;
     color:#707070;
     font-weight: 100;
-    margin:20px;
+    margin-bottom:10px;
 }
 .col1 p{
     font-size: 16px;
@@ -137,16 +145,27 @@ header{
 }
 
 .button{
-    border:1px solid black;
-    padding: 10px 40px;
-    width:140px;
+    border:1px solid #040270;
+    padding: 10px 10px 10px 10px;
+    width:100px;
     transform:translate(-50%,-50%);
     color: black;
     cursor: pointer;
+    margin-left:12vh;
+    margin-top: 10vh;
     border-radius: 6px;
     transition: 0.6s ease;
 }
 .button:hover{
-    background-color: black;
-    color:white;
+    background-color: #0563df;
+    color:#FFFFFF;
+}
+.col1::after{
+    content: '';
+    width:10px;
+    height:57%;
+    background:linear-gradient(#040270,#0471ff);
+    position: absolute;
+    left:-40px;
+    top:8px;
 }
