@@ -108,7 +108,7 @@ nav ul li a:hover{
 .col1::after{
     content: '';
     width:10px;
-    height:64%;
+    height:70%;
     background:linear-gradient(#040270,#0471ff);
     position: absolute;
     left:-40px;
