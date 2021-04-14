@@ -9,51 +9,19 @@
     <title>Contact Book</title>
 </head>
 <body>
-    <!-- <header>
-        <div class="main">
-            <div class="logo">
-                <img src="../images/logo2.png">
-
-            </div>
-            <ul>
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Home</a></li>
-            </ul>
-        </div> -->
-        <!-- <div class="title"> -->
-            <!-- <div class="lg">
-                <img src="../images/logo2.png"> -->
-                <!-- <h1>Contact Book</h1> -->
-            <!-- </div>
-             -->
-            <!-- <h2>Lost the contacts? <br>
-                Switch to Contact Book!</h2> -->
-        <!-- </div> -->
-        <!-- <div class="button">
-            <a href="#" class="btn">SIGN UP</a>
-            <a href="#" class="btn">LOGIN</a>
-            
-        </div>
-        
-       
-
-    </header>  -->
-
+ 
     <div class="container">
         <div class="navbar">
-            <!-- <img src="../images/logo1.png" class="logo"> -->
+            <img src="../images/logo2.png" class="logo">
             <nav>
-                <ul>
+                <ul id="menuList">
                     <li><a href="#">SIGN UP</a></li>
                     <li><a href="#">LOGIN</a></li>
                     <li><a href="#">ABOUT US</a></li>
                     <li><a href="#">CONTACT US</a></li>
                 </ul>
             </nav>
-            <img src="../images/menu.png" class="menu-icon">
+            <img src="../images/menu.png" class="menu-icon" onclick="togglemenu()">
         </div>
         <div class="row">
             <div class ="col1">
@@ -70,5 +38,17 @@
             </div>
         </div>
     </div>
+    <script>
+        var menuList = document.getElementById("menuList");
+        menuList.style.maxHeight="0px";
+        function togglemenu(){
+            if(menuList.style.maxHeight=="0px"){
+                menuList.style.maxHeight="130px";
+            }
+            else{
+                menuList.style.maxHeight="0px";
+            }
+        }
+    </script>
 </body>
 </html>
