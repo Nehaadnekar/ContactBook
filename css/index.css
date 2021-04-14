@@ -12,7 +12,7 @@
     padding-right: 8%;
     box-sizing: border-box;
     overflow: hidden;
-    background-color: #cbf5f7;
+    /* background-color: #cbf5f7; */
     background-size: cover;
     background-position: center;
 
@@ -20,7 +20,7 @@
 .navbar{
     width: 100%;
     display: flex;
-    align-items: center;
+    align-items: center;  
 }
 .logo{
     width:50px;
